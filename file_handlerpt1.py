@@ -1,9 +1,9 @@
-# problem 4- file handling
+# problem 4 file handling
 
 
 def process():
     # open integers.txt (read), double.txt(append), triple.txt (append)
-    with open("integers.txt") as input_file, open("double.txt", "a") as output_even_file, open("triple.txt", "a") as output_odd_file: 
+    with open("integers.txt") as input_file, open("double.txt", 'a') as output_even_file, open("triple.txt", 'a') as output_odd_file: 
     # read integers.txt    
         for line in input_file:
             input_num = int(line)
@@ -18,4 +18,7 @@ def process():
                  #  get the cube 
                 cube = input_num * input_num * input_num
             # write to triple.txt
-            output_even_file.write(str(cube) + "\n")
+                output_odd_file.write(str(cube) + "\n")
+
+
+process()
