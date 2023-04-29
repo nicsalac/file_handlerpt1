@@ -11,9 +11,11 @@ def process():
             if input_num % 2 == 0:
                 #get the square
                 square = input_num * input_num
-
-    # write to double.txt
-    #else
-    # if odd integers
-    #  get the cube 
-    # write to triple.txt
+                # write to double.txt
+                output_even_file.write(str(square) + "\n")
+            # if odd integers
+            else:
+                 #  get the cube 
+                cube = input_num * input_num * input_num
+            # write to triple.txt
+            output_even_file.write(str(cube) + "\n")
